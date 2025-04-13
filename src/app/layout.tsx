@@ -1,9 +1,6 @@
-"use client";
-
 import type { Metadata } from "next";
 import "./globals.css";
 import React from 'react';
-import SideMenu from "@/components/SideMenu";
 
 const metadata: Metadata = {
   title: "家計簿",
@@ -21,8 +18,7 @@ export default function RootLayout({
       <body
         className="antialiased"
       >
-        <div className="w-full h-dvh bg-green-100">
-          <SideMenu />
+        <div className="w-full h-dvh">
           {children}
         </div>
       </body>
