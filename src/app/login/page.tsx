@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function Login() {
   return (
     <>
-      <div className="mx-auto mt-[30%] w-[450px]">
+      <div className="mx-auto mt-[100px] w-[450px]">
         <div className="flex flex-col items-center bg-stone-100 h-[450px]">
           <h1 className="text-[2em] mt-4">ログイン</h1>
           <form action="" method="post" className="">
@@ -21,10 +23,10 @@ export default function Login() {
             <input
               type="submit"
               value="ログイン"
-              className="px-10 py-2 w-full text-white text-[1em] bg-green-500 rounded-[5px]  cursor-pointer"
+              className="px-10 py-2 w-full text-white text-[1em] bg-green-500 rounded-[5px]  cursor-pointer hover:bg-green-400 active:bg-green-600"
             />
           </form>
-          <a href="/" className="mt-6"><u>≫パスワードをお忘れの方はこちら</u></a>
+          <Link href="/password-reset" className="mt-6"><u>≫パスワードをお忘れの方はこちら</u></Link>
         </div>
 
         <div className="flex my-8">
@@ -33,9 +35,9 @@ export default function Login() {
         </div>
 
 
-        <a href="/" className="block text-center text-white bg-black py-2 rounded-[5px]">
+        <Link href="/" className="block text-center text-white bg-black py-2 rounded-[5px] cursor-pointer hover:bg-stone-700 active:bg-black">
           新規会員登録
-        </a>
+        </Link>
       </div>
     </>
   )
