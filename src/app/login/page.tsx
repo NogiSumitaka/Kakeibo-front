@@ -35,7 +35,7 @@ export default function Login() {
         </div>
 
 
-        <Link href="/" className="block text-center text-white bg-black py-2 rounded-[5px] cursor-pointer hover:bg-stone-700 active:bg-black">
+        <Link href="/register" className="block text-center text-white bg-black py-2 rounded-[5px] cursor-pointer hover:bg-stone-700 active:bg-black">
           新規会員登録
         </Link>
       </div>
