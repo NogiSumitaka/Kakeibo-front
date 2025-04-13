@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import Box from '@mui/material/Box';
 import DrawerList from '@/components/DrawerList';
@@ -5,7 +6,7 @@ import { Drawer } from '@mui/material';
 
 
 export default function SideMenu() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const toggleDrawer = (newOpen: boolean) => () => {
     setOpen(newOpen);
@@ -13,8 +14,8 @@ export default function SideMenu() {
   return (
     <>
       <div>
-        <Drawer variant="permanent" open={open} onClose={toggleDrawer(false)}>
-          <Box sx={{ width: 200 }} role="presentation" onClick={toggleDrawer(false)}>
+        <Drawer variant="persistent" open={open} onClose={toggleDrawer(false)}>
+          <Box sx={{ width: 200, }} role="presentation" onClick={toggleDrawer(false)}>
             <DrawerList />
           </Box>
         </Drawer>
