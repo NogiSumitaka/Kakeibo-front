@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ErrorOutlineIcon from '@mui/icons-material/ErrorOutline';
 
 export default function PasswordResetEmail() {
@@ -23,7 +22,6 @@ export default function PasswordResetEmail() {
               className="px-10 py-2 w-full text-white text-[1em] bg-green-500 rounded-[5px]  cursor-pointer hover:bg-green-400 active:bg-green-600"
             />
           </form>
-          <Link href="/password-reset" className="mt-6"><u>≫パスワードをお忘れの方はこちら</u></Link>
         </div>
       </div>
     </>
