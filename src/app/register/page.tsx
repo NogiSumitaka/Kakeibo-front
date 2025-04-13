@@ -42,7 +42,7 @@ export default function Register() {
               className="px-10 py-2 w-full text-white text-[1em] bg-green-500 rounded-[5px]  cursor-pointer hover:bg-green-400 active:bg-green-600"
             />
           </form>
-          <Link href="/password-reset" className="mt-6"><u>≫パスワードをお忘れの方はこちら</u></Link>
+          <Link href="/password-reset-email" className="mt-6"><u>≫パスワードをお忘れの方はこちら</u></Link>
         </div>
 
         <div className="flex my-8">
